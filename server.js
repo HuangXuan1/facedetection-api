@@ -64,9 +64,10 @@ app.use(cors());
 
 /*res means what server will response to the front-end(to the user side)*/
 app.get('/', (req, res) => {
-	postgres.select('*').from('users')
+	/*postgres.select('*').from('users')
 	.then(user => res.json(user[0]))
-	.catch(err => res.status(400).json('unable to find the user'))
+	.catch(err => res.status(400).json('unable to find the user'))*/
+	res.send('it is working!')
 })
 
 app.post('/signin', (req, res) => {
