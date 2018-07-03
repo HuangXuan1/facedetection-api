@@ -184,7 +184,7 @@ bcrypt.compare("veggies", '$2a$10$1NcDnGm35VtrZg4ur77Wt.4a7Sy2HHQuqy8dldRIkVV2UO
     // res = false
 });
 */
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log('RUN!!!!');
 })
 
